@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>在 Markdown 中 使用 Vue | Hello Vuepress</title>
+    <meta name="description" content="prepare to writing something about me !">
+    <meta name="generator" content="VuePress 1.3.1">
+    <link rel="icon" href="/vue-press/favicon.ico">
+    
+    <link rel="preload" href="/vue-press/assets/css/0.styles.2def7449.css" as="style"><link rel="preload" href="/vue-press/assets/js/app.61dd6209.js" as="script"><link rel="preload" href="/vue-press/assets/js/2.89b88fb8.js" as="script"><link rel="preload" href="/vue-press/assets/js/4.f25f63a7.js" as="script"><link rel="preload" href="/vue-press/assets/js/5.45d38768.js" as="script"><link rel="preload" href="/vue-press/assets/js/3.869493fb.js" as="script"><link rel="prefetch" href="/vue-press/assets/js/10.23003010.js"><link rel="prefetch" href="/vue-press/assets/js/11.3dd7faf3.js"><link rel="prefetch" href="/vue-press/assets/js/12.b320adaa.js"><link rel="prefetch" href="/vue-press/assets/js/13.fb498fe8.js"><link rel="prefetch" href="/vue-press/assets/js/14.7de9ef79.js"><link rel="prefetch" href="/vue-press/assets/js/6.000d6407.js"><link rel="prefetch" href="/vue-press/assets/js/7.2b0a2f7e.js"><link rel="prefetch" href="/vue-press/assets/js/8.a218c8a4.js"><link rel="prefetch" href="/vue-press/assets/js/9.4c225d46.js">
+    <link rel="stylesheet" href="/vue-press/assets/css/0.styles.2def7449.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vue-press/" class="home-link router-link-active"><!----> <span class="site-name">Hello Vuepress</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/vue-press/JS/" class="nav-link router-link-active">
+  我的前端世界
+</a></div><div class="nav-item"><a href="/vue-press/JS/three.html" class="nav-link">
+  Vue的自定义布局
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Github" class="dropdown-title"><span class="title">Github</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="http://www.github.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="http://www.zhihu.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的知乎
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/vue-press/JS/" class="nav-link router-link-active">
+  我的前端世界
+</a></div><div class="nav-item"><a href="/vue-press/JS/three.html" class="nav-link">
+  Vue的自定义布局
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Github" class="dropdown-title"><span class="title">Github</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="http://www.github.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="http://www.zhihu.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的知乎
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/vue-press/JS/one.html" class="sidebar-link">Markdown 扩展</a></li><li><a href="/vue-press/JS/two.html" class="active sidebar-link">在 Markdown 中 使用 Vue</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vue-press/JS/two.html#内置badge组件" class="sidebar-link">内置Badge组件</a></li><li class="sidebar-sub-header"><a href="/vue-press/JS/two.html#escaping" class="sidebar-link">Escaping</a></li><li class="sidebar-sub-header"><a href="/vue-press/JS/two.html#test" class="sidebar-link">Test</a></li><li class="sidebar-sub-header"><a href="/vue-press/JS/two.html#vue-特性" class="sidebar-link">Vue 特性</a></li><li class="sidebar-sub-header"><a href="/vue-press/JS/two.html#使用预处理器" class="sidebar-link">使用预处理器</a></li></ul></li><li><a href="/vue-press/JS/three.html" class="sidebar-link">Here might be a page title</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="在-markdown-中-使用-vue"><a href="#在-markdown-中-使用-vue" class="header-anchor">#</a> 在 Markdown 中 使用 Vue</h1> <h2 id="内置badge组件"><a href="#内置badge组件" class="header-anchor">#</a> 内置Badge组件 <span class="badge warning" style="vertical-align:top;" data-v-12bcf310>beta</span> <span class="badge tip" style="vertical-align:top;" data-v-12bcf310>默认主题</span></h2> <h2 id="escaping"><a href="#escaping" class="header-anchor">#</a> Escaping</h2> <div><p><code>{{this is will be displayed as-is}}</code></p></div><h2 id="test"><a href="#test" class="header-anchor">#</a> Test <span data-v-736116d9>这是一个test组件</span></h2> <h2 id="vue-特性"><a href="#vue-特性" class="header-anchor">#</a> Vue 特性</h2> <ol><li>2</li> <li><div><p><code>&lt;span v-for=&quot;i in 3&quot;&gt;{{ i }} &lt;/span&gt;</code></p></div> <div class="list-item"><span class="title">1 </span><span class="title">2 </span><span class="title">3 </span></div></li> <li>$page :<code>{
+  &quot;title&quot;: &quot;在 Markdown 中 使用 Vue&quot;,
+  &quot;frontmatter&quot;: {
+    &quot;0&quot;: &quot;t&quot;,
+    &quot;1&quot;: &quot;i&quot;,
+    &quot;2&quot;: &quot;t&quot;,
+    &quot;3&quot;: &quot;l&quot;,
+    &quot;4&quot;: &quot;e&quot;,
+    &quot;5&quot;: &quot;:&quot;,
+    &quot;6&quot;: &quot;定&quot;,
+    &quot;7&quot;: &quot;义&quot;,
+    &quot;8&quot;: &quot;当&quot;,
+    &quot;9&quot;: &quot;前&quot;,
+    &quot;10&quot;: &quot;页&quot;,
+    &quot;11&quot;: &quot;面&quot;,
+    &quot;12&quot;: &quot;的&quot;,
+    &quot;13&quot;: &quot;t&quot;,
+    &quot;14&quot;: &quot;i&quot;,
+    &quot;15&quot;: &quot;t&quot;,
+    &quot;16&quot;: &quot;l&quot;,
+    &quot;17&quot;: &quot;e&quot;,
+    &quot;18&quot;: &quot;？&quot;
+  },
+  &quot;regularPath&quot;: &quot;/JS/two.html&quot;,
+  &quot;relativePath&quot;: &quot;JS/two.md&quot;,
+  &quot;key&quot;: &quot;v-185505b9&quot;,
+  &quot;path&quot;: &quot;/JS/two.html&quot;,
+  &quot;headers&quot;: [
+    {
+      &quot;level&quot;: 2,
+      &quot;title&quot;: &quot;内置Badge组件&quot;,
+      &quot;slug&quot;: &quot;内置badge组件&quot;
+    },
+    {
+      &quot;level&quot;: 2,
+      &quot;title&quot;: &quot;Escaping&quot;,
+      &quot;slug&quot;: &quot;escaping&quot;
+    },
+    {
+      &quot;level&quot;: 2,
+      &quot;title&quot;: &quot;Test&quot;,
+      &quot;slug&quot;: &quot;test&quot;
+    },
+    {
+      &quot;level&quot;: 2,
+      &quot;title&quot;: &quot;Vue 特性&quot;,
+      &quot;slug&quot;: &quot;vue-特性&quot;
+    },
+    {
+      &quot;level&quot;: 2,
+      &quot;title&quot;: &quot;使用预处理器&quot;,
+      &quot;slug&quot;: &quot;使用预处理器&quot;
+    }
+  ]
+}</code></li> <li><div class="toDo"><p class="desc-text">i want do many interesting things</p></div></li></ol> <h2 id="使用预处理器"><a href="#使用预处理器" class="header-anchor">#</a> 使用预处理器</h2> <div class="language-scss line-numbers-mode"><pre class="language-scss"><code><span class="token selector">&lt;style&gt;
+.list-item .title</span><span class="token punctuation">{</span><span class="token property">font-size</span><span class="token punctuation">:</span>20px<span class="token punctuation">;</span><span class="token property">color</span><span class="token punctuation">:</span>#f78f12<span class="token punctuation">;</span><span class="token punctuation">}</span>
+<span class="token selector">&lt;/style&gt;
+&lt;style lang='scss'&gt;
+.toDo</span><span class="token punctuation">{</span>
+    <span class="token selector">.desc-text</span><span class="token punctuation">{</span>
+        <span class="token property">font-size</span><span class="token punctuation">:</span>24px<span class="token punctuation">;</span>
+        <span class="token property">color</span><span class="token punctuation">:</span>#123456<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+&lt;/style&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/vue-press/JS/one.html" class="prev">
+        Markdown 扩展
+      </a></span> <span class="next"><a href="/vue-press/JS/three.html">
+        Here might be a page title
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/vue-press/assets/js/app.61dd6209.js" defer></script><script src="/vue-press/assets/js/2.89b88fb8.js" defer></script><script src="/vue-press/assets/js/4.f25f63a7.js" defer></script><script src="/vue-press/assets/js/5.45d38768.js" defer></script><script src="/vue-press/assets/js/3.869493fb.js" defer></script>
+  </body>
+</html>
